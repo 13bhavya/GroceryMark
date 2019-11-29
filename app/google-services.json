@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "295252772146",
+    "firebase_url": "https://grocerymark-c0c30.firebaseio.com",
+    "project_id": "grocerymark-c0c30",
+    "storage_bucket": "grocerymark-c0c30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:295252772146:android:df97665752dfcd5c08c32b",
+        "android_client_info": {
+          "package_name": "com.example.grocerymark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "295252772146-m8f38svv12oq6ltjee2kg85e5jldlh5k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.grocerymark",
+            "certificate_hash": "6fd0acdbb0672b1a60c2bb6b9a9240af4b10f828"
+          }
+        },
+        {
+          "client_id": "295252772146-pvcrmjc3r9o2arr6pvpstsd7nc6n15b8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.grocerymark",
+            "certificate_hash": "7686cd1fe42037f9e725e6b12408511566afae75"
+          }
+        },
+        {
+          "client_id": "295252772146-rfrtc705ktka1v0u7hnm10kto9dp3d50.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdVb9P0UGUgwql6HUapp4avIZbIagF9kU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "295252772146-rfrtc705ktka1v0u7hnm10kto9dp3d50.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Category_Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="107dp"
+            android:layout_height="45dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="Fruits" />
+
+        <ImageView
+            android:id="@+id/fruit"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginLeft="78dp"
+            android:gravity="end"
+            app:srcCompat="@drawable/fri" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="Vegetable" />
+
+        <ImageView
+            android:id="@+id/vegis"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginLeft="78dp"
+            android:gravity="end"
+            app:srcCompat="@drawable/veg" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="107dp"
+            android:layout_height="45dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="Bakery" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginLeft="78dp"
+            android:gravity="end"
+            app:srcCompat="@drawable/bake" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="107dp"
+            android:layout_height="45dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="dairy" />
+
+        <ImageView
+            android:id="@+id/bakery"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginLeft="78dp"
+            android:gravity="end"
+            app:srcCompat="@drawable/dai" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="107dp"
+            android:layout_height="45dp"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-medium"
+            android:text="Meat" />
+
+        <ImageView
+            android:id="@+id/meat"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginLeft="78dp"
+            android:gravity="end"
+            app:srcCompat="@drawable/meat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+</LinearLayout>

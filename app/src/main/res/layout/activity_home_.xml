@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Home_Activity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="45dp"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:text="Choose Your Store" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/freshco"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            app:srcCompat="@drawable/frsh" />
+
+        <ImageButton
+            android:id="@+id/nofrill"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/nofrill" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/loblaw"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/loblaws" />
+
+        <ImageButton
+            android:id="@+id/walmart"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/walmart" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/search_loc"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:text="Search by location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
