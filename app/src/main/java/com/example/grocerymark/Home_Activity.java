@@ -1,6 +1,7 @@
 package com.example.grocerymark;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -19,6 +20,8 @@ public class Home_Activity extends AppCompatActivity implements View.OnClickList
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_);
 
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         freshco = findViewById(R.id.freshco);
         nofrill = findViewById(R.id.nofrill);
         loblaws = findViewById(R.id.loblaw);

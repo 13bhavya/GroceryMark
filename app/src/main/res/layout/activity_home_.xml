@@ -1,67 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:id="@+id/drawer_layout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
     tools:context=".Home_Activity">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="45dp"
-        android:gravity="center"
-        android:textSize="30dp"
-        android:textColor="@color/black"
-        android:text="Choose Your Store" />
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:orientation="horizontal">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <ImageButton
-            android:id="@+id/freshco"
-            android:layout_width="200dp"
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimary"
+            android:id="@+id/toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:elevation="4dp"/>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            app:srcCompat="@drawable/frsh" />
+            android:layout_margin="45dp"
+            android:gravity="center"
+            android:text="Choose Your Store"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
 
-        <ImageButton
-            android:id="@+id/nofrill"
-            android:layout_width="200dp"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/freshco"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                app:srcCompat="@drawable/frsh" />
+
+            <ImageButton
+                android:id="@+id/nofrill"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@drawable/nofrill" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/loblaw"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/loblaws" />
+
+            <ImageButton
+                android:id="@+id/walmart"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/walmart" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/search_loc"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            app:srcCompat="@drawable/nofrill" />
-
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:text="Search by location" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="120dp"
-        android:orientation="horizontal">
-
-        <ImageButton
-            android:id="@+id/loblaw"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/loblaws" />
-
-        <ImageButton
-            android:id="@+id/walmart"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            app:srcCompat="@drawable/walmart" />
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/search_loc"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        android:text="Search by location"
+    <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_menu">
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
