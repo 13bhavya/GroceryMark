@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="175dp"
-    android:background="@color/darkgray"
+    android:background="#137AC7"
     android:gravity="bottom"
     android:orientation="vertical"
     android:padding="16dp"
@@ -23,5 +23,5 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Info@codinginflow.com" />
+        android:text="Info@groceryMark.com" />
 </LinearLayout>
